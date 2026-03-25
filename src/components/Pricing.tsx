@@ -71,10 +71,10 @@ export function Pricing() {
         <div className="text-center">
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary">Oferta de Lanzamiento 2026</p>
           <h2 className="mt-4 font-headline text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
-            Precios especiales por tiempo limitado
+            Precios con 25% de descuento o más
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-            Aproveche nuestras tarifas de preventa. Válido hasta el <strong>30 de abril</strong> por fase de lanzamiento.
+            Aproveche nuestras tarifas de preventa. Válido hasta el <strong>30 de abril</strong> por fase de lanzamiento regional.
           </p>
         </div>
 
