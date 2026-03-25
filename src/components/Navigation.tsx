@@ -9,7 +9,7 @@ export function Navigation() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2">
           <span className="h-2.5 w-2.5 rounded-full bg-primary" />
-          <span className="font-headline text-xl font-extrabold tracking-tight">AgendaPro</span>
+          <span className="font-headline text-xl font-extrabold tracking-tight">Bridge</span>
         </Link>
         
         <nav className="hidden md:flex items-center gap-8">

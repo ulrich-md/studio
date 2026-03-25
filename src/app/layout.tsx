@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'AgendaPro — Agenda automática y bilingüe para negocios locales',
-  description: 'Maneje sus citas, responda preguntas frecuentes y comunique a sus clientes en español e inglés automáticamente por WhatsApp.',
+  title: 'Bridge — El puente bilingüe para su negocio en Santa Ana',
+  description: 'Conecte con locales y expats. Automatización de citas y FAQ por WhatsApp con IA que detecta el idioma automáticamente.',
 };
 
 export default function RootLayout({

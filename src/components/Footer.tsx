@@ -9,18 +9,18 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-10 lg:flex-row">
           <Link href="/" className="flex items-center gap-2 text-white">
             <span className="h-2 w-2 rounded-full bg-primary" />
-            <span className="font-headline text-lg font-extrabold">AgendaPro</span>
+            <span className="font-headline text-lg font-extrabold">Bridge</span>
           </Link>
           
           <nav className="flex flex-wrap justify-center gap-8">
             <Link href="#funciones" className="text-sm transition-colors hover:text-white">Funciones</Link>
             <Link href="#precios" className="text-sm transition-colors hover:text-white">Precios</Link>
             <Link href="#cta" className="text-sm transition-colors hover:text-white">Acceso anticipado</Link>
-            <Link href="mailto:hola@agendapro.app" className="text-sm transition-colors hover:text-white">hola@agendapro.app</Link>
+            <Link href="mailto:hola@bridge.app" className="text-sm transition-colors hover:text-white">hola@bridge.app</Link>
           </nav>
 
           <div className="text-center text-xs lg:text-right">
-            © 2025 AgendaPro. Hecho en Santa Ana, Costa Rica.
+            © 2025 Bridge. Conectando negocios en Santa Ana, Costa Rica.
           </div>
         </div>
       </div>

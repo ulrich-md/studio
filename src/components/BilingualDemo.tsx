@@ -16,7 +16,7 @@ export function BilingualDemo() {
                 </div>
                 <div>
                   <div className="text-sm font-bold">Vivero Vargas</div>
-                  <div className="text-[11px] opacity-70">Powered by AgendaPro</div>
+                  <div className="text-[11px] opacity-70">Powered by Bridge</div>
                 </div>
               </div>
             </div>
@@ -40,15 +40,6 @@ export function BilingualDemo() {
                 ¡Perfecto! El sábado estamos abiertos de 8 AM a 2 PM. ¿Me da su nombre para la reserva?
                 <div className="mt-1 text-[10px] text-muted-foreground text-right">10:16 AM ✓✓</div>
               </div>
-              <div className="max-w-[80%] self-start rounded-r-xl rounded-bl-xl bg-white p-3 shadow-sm">
-                Sarah. ¿Cuánto cuestan los helechos?
-                <Badge variant="secondary" className="ml-2 h-4 bg-orange-100 text-[9px] text-orange-700">ES</Badge>
-                <div className="mt-1 text-[10px] text-muted-foreground">10:17 AM</div>
-              </div>
-              <div className="max-w-[80%] self-end rounded-l-xl rounded-br-xl bg-[#DCF8C6] p-3 shadow-sm">
-                ¡Hola Sarah! Los helechos van de ₡3.500 a ₡8.000 según el tamaño. ¡La esperamos el sábado! 🌿
-                <div className="mt-1 text-[10px] text-muted-foreground text-right">10:17 AM ✓✓</div>
-              </div>
             </div>
           </div>
 
@@ -56,19 +47,19 @@ export function BilingualDemo() {
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary">Inteligencia bilingüe</p>
               <h2 className="mt-4 font-headline text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-                Un solo bot.<br />Dos idiomas.
+                Un solo Puente.<br />Dos idiomas.
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
-                Santa Ana y el GAM mezclan clientes locales en español y expats en inglés. AgendaPro detecta el idioma de cada mensaje y responde con naturalidad — sin traducciones torpes.
+                Santa Ana y Lindora mezclan clientes locales en español y expats en inglés. Bridge detecta el idioma de cada mensaje y responde con naturalidad — sin traducciones torpes.
               </p>
             </div>
 
             <ul className="space-y-4">
               {[
-                "Cambia de idioma en la misma conversación",
-                "Usa lenguaje natural y profesional en ambos idiomas",
-                "Envía recordatorios en el idioma preferido de cada cliente",
-                "Funciona para cualquier industria, sin jerga técnica"
+                "Detección inteligente de idioma por mensaje",
+                "Usa lenguaje natural y profesional",
+                "Envía recordatorios en el idioma preferido",
+                "Funciona para cualquier industria en Costa Rica"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-4 text-[15px] font-medium text-foreground">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs text-primary">✓</span>

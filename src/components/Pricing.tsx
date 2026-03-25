@@ -6,63 +6,72 @@ import { Badge } from "@/components/ui/badge"
 
 const tiers = [
   {
-    name: "Básico",
-    price: "19",
+    name: "El Local",
+    price: "29",
     period: "por mes",
+    description: "Automatización esencial para negocios locales.",
+    colorClass: "border-green-500/20 bg-green-50/50 dark:bg-green-950/10",
+    accentColor: "text-green-600 dark:text-green-400",
     features: [
-      "Hasta 100 citas al mes",
-      "Bot bilingüe en WhatsApp",
-      "5 preguntas frecuentes",
-      "Recordatorios básicos",
-      "Panel de control simple"
+      "WhatsApp Auto-Responder (FAQ Básicas)",
+      "Sincronización con Google Calendar",
+      "Interfaz 100% en Español",
+      "Gestión de 1 colaborador",
+      "Soporte por email"
     ],
-    cta: "Comenzar",
+    cta: "Empezar con El Local",
     featured: false
   },
   {
-    name: "Pro",
-    price: "39",
+    name: "Conexión 506",
+    price: "67",
     period: "por mes",
+    description: "El puente bilingüe. Ideal para atraer clientes de Lindora.",
+    colorClass: "border-blue-500 bg-blue-50/50 dark:bg-blue-950/20 ring-2 ring-blue-500 ring-offset-2",
+    accentColor: "text-blue-600 dark:text-blue-400",
     features: [
-      "Citas ilimitadas",
-      "Bot bilingüe en WhatsApp",
-      "Preguntas frecuentes ilimitadas",
-      "Recordatorios inteligentes (24h + 1h)",
-      "Panel + sincronización calendario",
-      "Seguimiento de citas perdidas",
+      "IA con Detección Bilingüe Automática",
+      "Recordatorios de Citas (2h antes)",
+      "Galería Visual de Productos en Chat",
+      "Sincronización para 3 colaboradores",
+      "Personalización de tono de voz",
       "Soporte prioritario"
     ],
-    cta: "Comenzar",
+    cta: "Elegir Conexión 506",
     featured: true,
-    badge: "Más popular"
+    badge: "El favorito de Santa Ana"
   },
   {
-    name: "Agencia",
-    price: "99",
+    name: "Élite Santa Ana",
+    price: "147",
     period: "por mes",
+    description: "Autonomía total para negocios de alta gama.",
+    colorClass: "border-orange-500/20 bg-orange-50/50 dark:bg-orange-950/10",
+    accentColor: "text-orange-600 dark:text-orange-400",
     features: [
-      "Hasta 5 locales o negocios",
-      "Todo lo del plan Pro",
-      "Marca blanca (white-label)",
-      "Panel de revendedor",
-      "Incorporación personalizada"
+      "Integración SINPE Móvil / Tarjetas",
+      "Entrenamiento de IA personalizado",
+      "Sincronización ilimitada de Staff",
+      "Reporte mensual de Retorno (ROI)",
+      "Múltiples sucursales",
+      "Account Manager dedicado"
     ],
-    cta: "Contáctenos",
+    cta: "Contactar Ventas",
     featured: false
   }
 ]
 
 export function Pricing() {
   return (
-    <section id="precios" className="py-24 sm:py-32">
+    <section id="precios" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary">Precios</p>
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary">Planes Bridge</p>
           <h2 className="mt-4 font-headline text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
-            Precios simples y transparentes
+            Precios diseñados para crecer
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-            Sin contratos. Sin sorpresas. Cancele cuando quiera. Precios en USD.
+            Desde sodas locales hasta servicios premium en Lindora. Encuentre el plan que mejor se adapte a su volumen.
           </p>
         </div>
 
@@ -70,34 +79,33 @@ export function Pricing() {
           {tiers.map((tier, idx) => (
             <div
               key={idx}
-              className={`relative flex flex-col rounded-3xl p-10 transition-all hover:-translate-y-1 ${
-                tier.featured
-                  ? "bg-foreground text-white shadow-2xl lg:scale-105"
-                  : "bg-secondary/50 border border-border"
-              }`}
+              className={`relative flex flex-col rounded-3xl p-10 transition-all hover:-translate-y-1 border ${tier.colorClass}`}
             >
               {tier.featured && (
                 <div className="absolute -top-4 right-8">
-                  <Badge className="bg-accent text-foreground hover:bg-accent">{tier.badge}</Badge>
+                  <Badge className="bg-blue-600 text-white hover:bg-blue-700">{tier.badge}</Badge>
                 </div>
               )}
               <div className="mb-8">
-                <p className={`font-headline text-sm font-bold uppercase tracking-widest ${tier.featured ? "text-white/60" : "text-muted-foreground"}`}>
+                <p className={`font-headline text-sm font-bold uppercase tracking-widest ${tier.accentColor}`}>
                   {tier.name}
                 </p>
                 <div className="mt-4 flex items-baseline gap-1">
-                  <span className="font-headline text-5xl font-extrabold tracking-tight">${tier.price}</span>
-                  <span className={`text-sm ${tier.featured ? "text-white/60" : "text-muted-foreground"}`}>/{tier.period}</span>
+                  <span className="font-headline text-5xl font-extrabold tracking-tight text-foreground">${tier.price}</span>
+                  <span className="text-sm text-muted-foreground">/{tier.period}</span>
                 </div>
+                <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                  {tier.description}
+                </p>
               </div>
               
-              <div className={`mb-8 h-px w-full ${tier.featured ? "bg-white/10" : "bg-border"}`} />
+              <div className="mb-8 h-px w-full bg-border" />
 
               <ul className="mb-10 flex-1 space-y-4">
                 {tier.features.map((feature, fIdx) => (
                   <li key={fIdx} className="flex items-start gap-3 text-sm">
-                    <span className={`font-bold ${tier.featured ? "text-accent" : "text-primary"}`}>✓</span>
-                    <span className={tier.featured ? "text-white/70" : "text-muted-foreground"}>{feature}</span>
+                    <span className={`font-bold ${tier.accentColor}`}>✓</span>
+                    <span className="text-muted-foreground">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -106,7 +114,7 @@ export function Pricing() {
                 asChild
                 className={`h-12 w-full rounded-xl text-sm font-bold transition-all ${
                   tier.featured
-                    ? "bg-primary text-white hover:bg-primary/90"
+                    ? "bg-blue-600 text-white hover:bg-blue-700"
                     : "bg-white text-foreground border border-border hover:bg-secondary"
                 }`}
               >
@@ -114,6 +122,12 @@ export function Pricing() {
               </Button>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <p className="text-sm text-muted-foreground">
+            * Se aplica un <strong>Setup Fee de $97</strong> (pago único) para todos los planes para garantizar la configuración profesional de su bot.
+          </p>
         </div>
       </div>
     </section>
