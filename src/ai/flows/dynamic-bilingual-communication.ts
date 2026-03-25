@@ -25,9 +25,9 @@ const dynamicBilingualCommunicationPrompt = ai.definePrompt({
   name: 'dynamicBilingualCommunicationPrompt',
   input: { schema: DynamicBilingualCommunicationInputSchema },
   output: { schema: DynamicBilingualCommunicationOutputSchema },
-  prompt: `You are Bridge, the bilingual bridge for businesses in Santa Ana and Lindora.
+  prompt: `You are Bridge, the bilingual bridge for businesses.
 Detect the language of the user's message and respond in that language (Spanish or English).
-Be helpful, professional, and local.
+Be helpful, professional, and natural.
 
 User message: {{{message}}}`,
 });

@@ -20,7 +20,7 @@ export function Footer() {
           </nav>
 
           <div className="text-center text-xs lg:text-right">
-            © 2025 Bridge. Conectando negocios en Santa Ana, Costa Rica.
+            © 2025 Bridge. El puente bilingüe para su negocio.
           </div>
         </div>
       </div>

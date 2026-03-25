@@ -50,7 +50,7 @@ export function BilingualDemo() {
                 Un solo Puente.<br />Dos idiomas.
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
-                Santa Ana y Lindora mezclan clientes locales en español y expats en inglés. Bridge detecta el idioma de cada mensaje y responde con naturalidad — sin traducciones torpes.
+                Muchos negocios mezclan clientes locales y extranjeros. Bridge detecta el idioma de cada mensaje y responde con naturalidad — sin traducciones automáticas torpes.
               </p>
             </div>
 
@@ -59,7 +59,7 @@ export function BilingualDemo() {
                 "Detección inteligente de idioma por mensaje",
                 "Usa lenguaje natural y profesional",
                 "Envía recordatorios en el idioma preferido",
-                "Funciona para cualquier industria en Costa Rica"
+                "Ideal para zonas turísticas y comunidades mixtas"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-4 text-[15px] font-medium text-foreground">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs text-primary">✓</span>

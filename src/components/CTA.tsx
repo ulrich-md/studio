@@ -36,7 +36,7 @@ export function CTA() {
           El primer mes es gratis.<br />Sin tarjeta de crédito.
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/70">
-          Únase a más de 40 negocios locales en la lista de acceso anticipado. Lanzamos primero en Santa Ana.
+          Únase a la lista de acceso anticipado y sea de los primeros en automatizar su negocio con Bridge.
         </p>
 
         <div className="mt-12">

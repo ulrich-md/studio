@@ -6,21 +6,21 @@ const testimonials = [
   {
     quote: "Antes pasaba el día entero contestando WhatsApp mientras intentaba trabajar. Ahora el teléfono está tranquilo y tengo la agenda llena. Increíble.",
     author: "Mario Vargas",
-    role: "Fontanero, Santa Ana",
+    role: "Fontanero Independiente",
     initials: "MV",
     color: "bg-primary"
   },
   {
-    quote: "Mis clientes expats reservan en inglés y mis clientes locales en español. El bot maneja los dos a la perfección. Yo solo me dedico a las uñas.",
+    quote: "Mis clientes extranjeros reservan en inglés y mis clientes locales en español. El bot maneja los dos a la perfección. Yo solo me dedico a las uñas.",
     author: "Ana Leal",
-    role: "Salón de uñas, Escazú",
+    role: "Propietaria de Salón de Belleza",
     initials: "AL",
     color: "bg-orange-700"
   },
   {
     quote: "Era escéptico, no soy persona de tecnología. Pero la configuración tomó una tarde y lleva 3 meses funcionando solo. Las citas perdidas bajaron a la mitad.",
     author: "Carlos Rojas",
-    role: "Fisioterapeuta, San José",
+    role: "Fisioterapeuta",
     initials: "CR",
     color: "bg-blue-800"
   }
@@ -36,7 +36,7 @@ export function Testimonials() {
             Negocios que ya ahorran<br />más de 10 horas a la semana
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-            De fontaneros en Santa Ana a salones en Escazú — resultados reales de negocios reales.
+            Desde servicios técnicos hasta salones de belleza — resultados reales de negocios que escalan.
           </p>
         </div>
 

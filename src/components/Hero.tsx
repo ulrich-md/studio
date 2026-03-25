@@ -13,13 +13,13 @@ export function Hero() {
           <div className="pb-16 lg:pb-32">
             <Badge variant="outline" className="mb-6 gap-1.5 border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-              Bilingüe · Santa Ana & Lindora
+              Inteligencia Bilingüe Automática
             </Badge>
             <h1 className="font-headline text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               El <em className="not-italic text-primary">Puente</em> entre su negocio y sus clientes bilingües
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground sm:text-xl">
-              Bridge automatiza sus citas y responde en español e inglés automáticamente. Deje de perder clientes de Lindora por barreras de idioma.
+              Bridge automatiza sus citas y responde en español e inglés automáticamente. Deje de perder ventas por barreras de idioma en su WhatsApp.
             </p>
             <div className="mt-10 flex flex-col flex-wrap gap-4 sm:flex-row sm:items-center">
               <Button asChild size="lg" className="h-14 rounded-xl bg-primary px-8 text-base font-bold shadow-lg shadow-primary/20 hover:bg-primary/90">

@@ -20,7 +20,7 @@ const automatedFaqAnsweringPrompt = ai.definePrompt({
   name: 'automatedFaqAnsweringPrompt',
   input: { schema: AutomatedFaqAnsweringInputSchema },
   output: { schema: AutomatedFaqAnsweringOutputSchema },
-  prompt: `You are Bridge, an automated, bilingual WhatsApp bot for local businesses in Santa Ana, Costa Rica. 
+  prompt: `You are Bridge, an automated, bilingual WhatsApp bot for local businesses. 
 Your goal is to provide quick and accurate answers to customer questions. 
 
 Identify the language of the query (Spanish or English) and respond in that same language.

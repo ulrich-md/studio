@@ -9,7 +9,7 @@ const tiers = [
     name: "El Local",
     price: "29",
     period: "por mes",
-    description: "Automatización esencial para negocios locales.",
+    description: "Automatización esencial para negocios en crecimiento.",
     colorClass: "border-green-500/20 bg-green-50/50 dark:bg-green-950/10",
     accentColor: "text-green-600 dark:text-green-400",
     features: [
@@ -26,7 +26,7 @@ const tiers = [
     name: "Conexión 506",
     price: "67",
     period: "por mes",
-    description: "El puente bilingüe. Ideal para atraer clientes de Lindora.",
+    description: "El puente bilingüe. Ideal para atraer clientes internacionales.",
     colorClass: "border-blue-500 bg-blue-50/50 dark:bg-blue-950/20 ring-2 ring-blue-500 ring-offset-2",
     accentColor: "text-blue-600 dark:text-blue-400",
     features: [
@@ -39,13 +39,13 @@ const tiers = [
     ],
     cta: "Elegir Conexión 506",
     featured: true,
-    badge: "El favorito de Santa Ana"
+    badge: "El más popular"
   },
   {
-    name: "Élite Santa Ana",
+    name: "Élite Business",
     price: "147",
     period: "por mes",
-    description: "Autonomía total para negocios de alta gama.",
+    description: "Autonomía total para negocios de alta demanda.",
     colorClass: "border-orange-500/20 bg-orange-50/50 dark:bg-orange-950/10",
     accentColor: "text-orange-600 dark:text-orange-400",
     features: [
@@ -71,7 +71,7 @@ export function Pricing() {
             Precios diseñados para crecer
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-            Desde sodas locales hasta servicios premium en Lindora. Encuentre el plan que mejor se adapte a su volumen.
+            Desde sodas locales hasta servicios premium internacionales. Encuentre el plan que mejor se adapte a su volumen.
           </p>
         </div>
 

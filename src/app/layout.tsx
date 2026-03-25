@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Bridge — El puente bilingüe para su negocio en Santa Ana',
-  description: 'Conecte con locales y expats. Automatización de citas y FAQ por WhatsApp con IA que detecta el idioma automáticamente.',
+  title: 'Bridge — El puente bilingüe para su negocio',
+  description: 'Conecte con clientes locales y extranjeros. Automatización de citas y FAQ por WhatsApp con IA que detecta el idioma automáticamente.',
 };
 
 export default function RootLayout({
