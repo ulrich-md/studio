@@ -1,66 +1,38 @@
+
 "use client"
 
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { useToast } from "@/hooks/use-toast"
+import Link from "next/link"
+import { MessageSquare, ExternalLink } from "lucide-react"
 
 export function CTA() {
-  const [phone, setPhone] = useState("")
-  const [isSubmitted, setIsSubmitted] = useState(false)
-  const { toast } = useToast()
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!phone) {
-      toast({
-        title: "Error",
-        description: "Por favor ingrese su número de WhatsApp.",
-        variant: "destructive"
-      })
-      return
-    }
-    
-    setIsSubmitted(true)
-    toast({
-      title: "¡Recibido!",
-      description: "Le contactaremos pronto para mostrarle el poder de Bridge.",
-    })
-  }
-
   return (
     <section id="cta" className="bg-primary py-24 text-primary-foreground sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 text-center">
         <h2 className="font-headline text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-          Lleve su negocio al siguiente nivel.<br />Empiece con Bridge hoy mismo.
+          El futuro de su negocio empieza aquí.
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/70">
-          Únase a los negocios que ya están automatizando su atención al cliente y agendamiento bilingüe.
+          Bridge no es solo un bot; es un empleado bilingüe incansable que entiende su cultura y a sus clientes.
         </p>
 
-        <div className="mt-12">
-          {!isSubmitted ? (
-            <form onSubmit={handleSubmit} className="mx-auto flex max-w-md flex-col gap-4 sm:flex-row sm:items-center">
-              <Input
-                type="text"
-                placeholder="Su número de WhatsApp"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                className="h-14 bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-accent rounded-xl"
-              />
-              <Button type="submit" className="h-14 rounded-xl bg-white px-8 font-bold text-primary hover:bg-accent hover:text-foreground">
-                Saber más →
-              </Button>
-            </form>
-          ) : (
-            <div className="mx-auto inline-block rounded-2xl bg-white/15 p-8 font-bold text-white shadow-xl backdrop-blur-sm">
-              🎉 ¡Gracias por su interés! Le contactaremos pronto por WhatsApp para una demostración personalizada.
-            </div>
-          )}
+        <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <Button asChild size="lg" className="h-16 rounded-2xl bg-white px-10 text-lg font-bold text-primary hover:bg-accent hover:text-foreground">
+            <Link href="https://wa.me/your-number" target="_blank" className="flex items-center gap-2">
+              <MessageSquare className="h-5 w-5" />
+              Probar Demo en WhatsApp
+            </Link>
+          </Button>
+          <Button variant="outline" asChild size="lg" className="h-16 rounded-2xl border-white/20 bg-transparent px-10 text-lg font-bold text-white hover:bg-white/10">
+            <Link href="#capacidades" className="flex items-center gap-2">
+              Ver Capacidades Técnicas
+              <ExternalLink className="h-5 w-5" />
+            </Link>
+          </Button>
         </div>
         
-        <p className="mt-8 text-sm text-white/40">
-          Sin compromisos. Solo una demostración de cómo Bridge puede ayudarle.
+        <p className="mt-8 text-sm text-white/40 italic">
+          Disponible 24/7. Sin esperas. Pura Vida.
         </p>
       </div>
     </section>

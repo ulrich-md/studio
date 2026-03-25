@@ -1,3 +1,4 @@
+
 "use client"
 
 import { Navigation } from "@/components/Navigation"
@@ -7,6 +8,7 @@ import { Features } from "@/components/Features"
 import { HowItWorks } from "@/components/HowItWorks"
 import { BilingualDemo } from "@/components/BilingualDemo"
 import { UseCases } from "@/components/UseCases"
+import { AICapabilities } from "@/components/AICapabilities"
 import { Pricing } from "@/components/Pricing"
 import { FAQ } from "@/components/FAQ"
 import { CTA } from "@/components/CTA"
@@ -25,6 +27,7 @@ export default function Home() {
         <HowItWorks />
         <BilingualDemo />
         <UseCases />
+        <AICapabilities />
         <Testimonials />
         <Pricing />
         <FAQ />

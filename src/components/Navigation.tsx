@@ -1,3 +1,4 @@
+
 "use client"
 
 import Link from "next/link"
@@ -19,6 +20,9 @@ export function Navigation() {
           <Link href="#como" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Cómo funciona
           </Link>
+          <Link href="#capacidades" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+            IA Avanzada
+          </Link>
           <Link href="#precios" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Precios
           </Link>
@@ -26,7 +30,7 @@ export function Navigation() {
 
         <div className="flex items-center gap-4">
           <Button asChild variant="default" className="hidden sm:inline-flex bg-primary text-primary-foreground font-semibold hover:bg-primary/90">
-            <Link href="#cta">Acceso anticipado</Link>
+            <Link href="#cta">Ver Demo</Link>
           </Button>
           <Button variant="ghost" size="icon" className="md:hidden">
             <span className="sr-only">Toggle menu</span>
