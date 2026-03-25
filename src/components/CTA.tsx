@@ -25,7 +25,7 @@ export function CTA() {
     setIsSubmitted(true)
     toast({
       title: "¡Éxito!",
-      description: "Le contactaremos pronto sobre su cupo con 25% de descuento.",
+      description: "Le contactaremos pronto sobre su oferta especial de lanzamiento.",
     })
   }
 
@@ -33,10 +33,10 @@ export function CTA() {
     <section id="cta" className="bg-primary py-24 text-primary-foreground sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 text-center">
         <h2 className="font-headline text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-          Obtenga un 25% de descuento.<br />Oferta especial de lanzamiento.
+          Oferta especial de lanzamiento.<br />Ahorre hasta un 40% mensual.
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/70">
-          Únase a la lista de acceso anticipado y asegure su descuento exclusivo para automatizar su negocio con Bridge.
+          Únase a la lista de acceso anticipado y asegure su tarifa preferencial para automatizar su negocio con Bridge.
         </p>
 
         <div className="mt-12">
@@ -57,12 +57,12 @@ export function CTA() {
                 className="h-14 bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-accent rounded-xl"
               />
               <Button type="submit" className="h-14 rounded-xl bg-white px-8 font-bold text-primary hover:bg-accent hover:text-foreground">
-                Quiero mi 25% de descuento →
+                Quiero mi oferta de preventa →
               </Button>
             </form>
           ) : (
             <div className="mx-auto inline-block rounded-2xl bg-white/15 p-8 font-bold text-white shadow-xl backdrop-blur-sm">
-              🎉 ¡Ya está en la lista! Le contactaremos en menos de 48 horas para activar su descuento.
+              🎉 ¡Ya está en la lista! Le contactaremos en menos de 48 horas para activar su beneficio de lanzamiento.
             </div>
           )}
         </div>
