@@ -1,3 +1,16 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-phone",
+      "description": "Phone mockup showing WhatsApp conversation",
+      "imageUrl": "https://picsum.photos/seed/agendapro-phone/400/800",
+      "imageHint": "phone mockup"
+    },
+    {
+      "id": "business-avatar",
+      "description": "Avatar for a business profile",
+      "imageUrl": "https://picsum.photos/seed/agendapro-avatar/100/100",
+      "imageHint": "business avatar"
+    }
+  ]
 }
