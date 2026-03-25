@@ -6,6 +6,7 @@ import { LogosStrip } from "@/components/LogosStrip"
 import { Features } from "@/components/Features"
 import { HowItWorks } from "@/components/HowItWorks"
 import { BilingualDemo } from "@/components/BilingualDemo"
+import { UseCases } from "@/components/UseCases"
 import { Pricing } from "@/components/Pricing"
 import { FAQ } from "@/components/FAQ"
 import { CTA } from "@/components/CTA"
@@ -23,6 +24,7 @@ export default function Home() {
         <Features />
         <HowItWorks />
         <BilingualDemo />
+        <UseCases />
         <Testimonials />
         <Pricing />
         <FAQ />

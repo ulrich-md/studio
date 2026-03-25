@@ -8,9 +8,8 @@ const tiers = [
   {
     name: "El Básico",
     price: "19",
-    originalPrice: null,
     period: "por mes",
-    description: "Presencia básica para su negocio.",
+    description: "Para negocios que solo quieren presencia básica.",
     colorClass: "border-slate-200 bg-slate-50/50 dark:bg-slate-900/10",
     accentColor: "text-slate-600 dark:text-slate-400",
     features: [
@@ -20,14 +19,13 @@ const tiers = [
       "Soporte por email",
       "No incluye agendamiento automático"
     ],
-    cta: "Empezar con El Básico",
+    cta: "Elegir El Básico",
     featured: false,
     psychology: "Precio Señuelo Inferior"
   },
   {
     name: "Conexión Bilingüe",
     price: "27",
-    originalPrice: "45",
     period: "por mes",
     description: "La IA bilingüe que cierra ventas sola.",
     colorClass: "border-blue-500 bg-blue-50/50 dark:bg-blue-950/20 ring-2 ring-blue-500 ring-offset-2",
@@ -48,20 +46,19 @@ const tiers = [
   {
     name: "Business Pro",
     price: "59",
-    originalPrice: null,
     period: "por mes",
     description: "Todo incluido para autonomía total.",
     colorClass: "border-amber-500/20 bg-amber-50/50 dark:bg-amber-950/10",
     accentColor: "text-amber-600 dark:text-amber-400",
     features: [
       "Recordatorios automáticos ilimitados",
-      "Reporte mensual de ventas e IA",
+      "Reporte mensual de métricas",
       "Galería de productos en el chat",
       "Sincronización para todo el staff",
       "Prioridad en entrenamiento de IA",
-      "Soporte técnico 24/7"
+      "Soporte técnico preferencial"
     ],
-    cta: "Obtener Business Pro",
+    cta: "Elegir Business Pro",
     featured: false,
     psychology: "Anclaje Superior"
   }
@@ -72,12 +69,12 @@ export function Pricing() {
     <section id="precios" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary">Oferta de Lanzamiento Regional</p>
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary">Inversión Inteligente</p>
           <h2 className="mt-4 font-headline text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
-            Precios especiales de preventa
+            Planes adaptados a su ritmo
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-            Aproveche nuestras tarifas de lanzamiento. Válido hasta el <strong>30 de abril</strong> por fase de apertura en nuevas zonas.
+            Elija el puente que mejor conecte con sus clientes. Sin contratos ocultos.
           </p>
         </div>
 
@@ -97,11 +94,6 @@ export function Pricing() {
                   {tier.name}
                 </p>
                 <div className="mt-4 flex flex-col gap-1">
-                  {tier.originalPrice && (
-                    <span className="text-lg text-muted-foreground line-through decoration-destructive/50">
-                      ${tier.originalPrice}
-                    </span>
-                  )}
                   <div className="flex items-baseline gap-1">
                     <span className="font-headline text-5xl font-extrabold tracking-tight text-foreground">${tier.price}</span>
                     <span className="text-sm text-muted-foreground">/{tier.period}</span>
@@ -142,12 +134,9 @@ export function Pricing() {
           ))}
         </div>
 
-        <div className="mt-12 text-center space-y-2">
+        <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground italic">
             "Rescata una sola cita perdida al mes y el sistema se paga solo."
-          </p>
-          <p className="text-sm text-muted-foreground">
-            * <strong>Setup Fee especial de $47</strong> (antes $150) para los primeros 5 negocios de la zona.
           </p>
         </div>
       </div>
