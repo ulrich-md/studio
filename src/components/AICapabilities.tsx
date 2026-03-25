@@ -2,7 +2,7 @@
 "use client"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Brain, Languages, Calendar, ShieldCheck, Zap, Heart } from "lucide-react"
+import { Brain, Languages, Calendar, Clock, Zap, Heart } from "lucide-react"
 
 const capabilities = [
   {
@@ -18,10 +18,10 @@ const capabilities = [
     detail: "Mantiene el hilo de la venta durante múltiples días."
   },
   {
-    icon: <ShieldCheck className="h-6 w-6" />,
-    title: "Lógica de Validación de Pagos",
-    description: "Detecta cuando un cliente envía un comprobante de SINPE o transferencia. El bot analiza el mensaje para confirmar que el pago ha sido reportado antes de bloquear el espacio en la agenda.",
-    detail: "Gestión de depósitos para evitar 'no-shows'."
+    icon: <Clock className="h-6 w-6" />,
+    title: "Disponibilidad 24/7 Ininterrumpida",
+    description: "Nunca pierda una venta por estar fuera de horario. Bridge responde consultas y gestiona el interés del cliente en el momento exacto en que este tiene la intención de compra.",
+    detail: "Atención inmediata incluso en días feriados."
   },
   {
     icon: <Calendar className="h-6 w-6" />,
@@ -32,14 +32,14 @@ const capabilities = [
   {
     icon: <Heart className="h-6 w-6" />,
     title: "Personalidad Adaptativa 'Pura Vida'",
-    description: "No es un robot frío. Bridge está configurado con el tono de voz de su negocio: desde la calidez del 'Pura Vida' costarricense hasta la profesionalidad ejecutiva de Lindora.",
+    description: "No es un robot frío. Bridge está configurado con el tono de voz de su negocio: desde la calidez del 'Pura Vida' costarricense hasta la profesionalidad ejecutiva.",
     detail: "Ajuste de tono según el perfil del cliente detectado."
   },
   {
     icon: <Zap className="h-6 w-6" />,
     title: "Entrenamiento Específico del Negocio",
     description: "Usted no se adapta a la IA; la IA se adapta a usted. Entrenamos el modelo con sus precios, jerga técnica y catálogo de productos específico.",
-    detail: "Actualizaciones semanales de conocimiento."
+    detail: "Actualizaciones constantes de conocimiento."
   }
 ]
 

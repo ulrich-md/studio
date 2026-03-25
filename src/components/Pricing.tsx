@@ -1,3 +1,4 @@
+
 "use client"
 
 import { Button } from "@/components/ui/button"
@@ -21,21 +22,21 @@ const tiers = [
     ],
     cta: "Elegir El Básico",
     featured: false,
-    psychology: "Precio Señuelo Inferior"
   },
   {
     name: "Conexión Bilingüe",
     price: "27",
     period: "por mes",
+    listPrice: "45",
     description: "La IA bilingüe que cierra ventas sola.",
     colorClass: "border-blue-500 bg-blue-50/50 dark:bg-blue-950/20 ring-2 ring-blue-500 ring-offset-2",
     accentColor: "text-blue-600 dark:text-blue-400",
     features: [
       "IA Bilingüe Automática (EN/ES)",
-      "Agendamiento de Citas ilimitado",
-      "Sincronización con Google Calendar",
-      "Personalidad Pura Vida / Profesional",
-      "Gestión de SINPE Móvil manual",
+      "Agendamiento de Citas inteligente",
+      "Sincronización con Calendarios",
+      "Personalidad Personalizada",
+      "Atención 24/7 ininterrumpida",
       "Rescata una sola cita y se paga solo"
     ],
     cta: "Elegir Conexión Bilingüe",
@@ -60,7 +61,6 @@ const tiers = [
     ],
     cta: "Elegir Business Pro",
     featured: false,
-    psychology: "Anclaje Superior"
   }
 ]
 
@@ -95,6 +95,9 @@ export function Pricing() {
                 </p>
                 <div className="mt-4 flex flex-col gap-1">
                   <div className="flex items-baseline gap-1">
+                    {tier.listPrice && (
+                      <span className="text-sm text-muted-foreground line-through mr-2">${tier.listPrice}</span>
+                    )}
                     <span className="font-headline text-5xl font-extrabold tracking-tight text-foreground">${tier.price}</span>
                     <span className="text-sm text-muted-foreground">/{tier.period}</span>
                   </div>

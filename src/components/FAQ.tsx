@@ -1,3 +1,4 @@
+
 "use client"
 
 import {
@@ -9,8 +10,8 @@ import {
 
 const faqs = [
   {
-    q: "¿Cómo funcionan los pagos por SINPE Móvil?",
-    a: "Para facilitar la operación sin integraciones complejas, la IA de Bridge guía al cliente para que realice el SINPE al número del negocio y envíe el comprobante por el mismo chat. Usted solo confirma la recepción."
+    q: "¿Bridge reemplaza a mis empleados actuales?",
+    a: "No, Bridge es un asistente bilingüe que libera a su equipo de las tareas repetitivas de contestar preguntas básicas y agendar citas, permitiéndoles enfocarse en brindar el servicio."
   },
   {
     q: "¿Qué incluye el Setup Fee de lanzamiento?",
@@ -18,7 +19,7 @@ const faqs = [
   },
   {
     q: "¿Mis clientes tienen que descargar alguna app?",
-    a: "No. Todo ocurre por WhatsApp, que sus clientes ya tienen. Solo escriben a su número como siempre — sin descargas ni cuentas nuevas."
+    a: "No. Todo ocurre por el canal que sus clientes ya usan. Solo escriben al número asignado — sin descargas ni cuentas nuevas."
   },
   {
     q: "¿Qué pasa si un cliente pregunta algo que el bot no sabe?",
@@ -26,7 +27,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tiempo tarda la configuración inicial?",
-    a: "Con nuestro equipo de implementación, su negocio puede estar activo y recibiendo citas en menos de 24 horas."
+    a: "Con nuestro equipo de implementación, su negocio puede estar activo y optimizado en muy poco tiempo, generalmente menos de 48 horas."
   }
 ]
 

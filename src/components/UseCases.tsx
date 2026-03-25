@@ -1,3 +1,4 @@
+
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
@@ -19,20 +20,20 @@ const useCases = [
   {
     title: "Servicios Técnicos",
     icon: <Wrench className="h-6 w-6" />,
-    description: "Reciba solicitudes de presupuestos y fotos de reparaciones directamente en WhatsApp.",
+    description: "Reciba solicitudes de presupuestos y fotos de reparaciones directamente en el chat.",
     example: "Client: 'My AC is leaking' -> Bridge: 'Sure! Please send a photo...'"
   },
   {
     title: "Consultorios",
     icon: <Stethoscope className="h-6 w-6" />,
-    description: "Gestione disponibilidad de especialistas y confirme citas mediante comprobantes SINPE.",
-    example: "Paciente: 'Confirmo mi cita' -> Bridge: 'Perfecto, envíeme el comprobante.'"
+    description: "Gestione disponibilidad de especialistas y confirme citas de forma automatizada.",
+    example: "Paciente: '¿Qué horas tiene el Dr.?' -> Bridge: 'El Dr. tiene libre a las 10 AM.'"
   }
 ]
 
 export function UseCases() {
   return (
-    <section className="py-24 sm:py-32 bg-secondary/30">
+    <section id="usos" className="py-24 sm:py-32 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary">Versatilidad</p>

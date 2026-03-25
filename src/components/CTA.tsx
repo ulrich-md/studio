@@ -3,7 +3,7 @@
 
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { MessageSquare, ExternalLink } from "lucide-react"
+import { Sparkles, ExternalLink } from "lucide-react"
 
 export function CTA() {
   return (
@@ -18,9 +18,9 @@ export function CTA() {
 
         <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button asChild size="lg" className="h-16 rounded-2xl bg-white px-10 text-lg font-bold text-primary hover:bg-accent hover:text-foreground">
-            <Link href="https://wa.me/your-number" target="_blank" className="flex items-center gap-2">
-              <MessageSquare className="h-5 w-5" />
-              Probar Demo en WhatsApp
+            <Link href="#funciones" className="flex items-center gap-2">
+              <Sparkles className="h-5 w-5" />
+              Explorar Funciones
             </Link>
           </Button>
           <Button variant="outline" asChild size="lg" className="h-16 rounded-2xl border-white/20 bg-transparent px-10 text-lg font-bold text-white hover:bg-white/10">
