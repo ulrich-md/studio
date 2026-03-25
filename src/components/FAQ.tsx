@@ -9,24 +9,24 @@ import {
 
 const faqs = [
   {
+    q: "¿Cómo funcionan los pagos por SINPE Móvil?",
+    a: "Para facilitar la operación sin integraciones complejas, la IA de Bridge guía al cliente para que realice el SINPE al número del negocio y envíe el comprobante por el mismo chat. Usted solo confirma la recepción."
+  },
+  {
+    q: "¿Qué incluye el Setup Fee de lanzamiento?",
+    a: "Actualmente tenemos una oferta de $47 (precio normal $150). Esto incluye la configuración personalizada del tono de voz de su IA, la carga de su catálogo/FAQ y la sincronización con sus calendarios."
+  },
+  {
     q: "¿Mis clientes tienen que descargar alguna app?",
-    a: "No. Todo ocurre por WhatsApp, que sus clientes ya tienen. Solo escriben a su número como siempre — sin descargas, sin cuentas nuevas, sin fricciones."
+    a: "No. Todo ocurre por WhatsApp, que sus clientes ya tienen. Solo escriben a su número como siempre — sin descargas ni cuentas nuevas."
   },
   {
     q: "¿Qué pasa si un cliente pregunta algo que el bot no sabe?",
-    a: "El bot le avisa al cliente que le trasladará la pregunta y le envía a usted una notificación. Usted responde directamente, y el bot aprende de las preguntas más comunes con el tiempo."
-  },
-  {
-    q: "¿Funciona para servicios a domicilio o sin local fijo?",
-    a: "Perfectamente. Fontaneros, electricistas, estilistas a domicilio — AgendaPro funciona para cualquier negocio de servicios."
-  },
-  {
-    q: "¿Puedo seguir chateando con clientes manualmente?",
-    a: "Sí. Puede tomar el control de cualquier conversación desde el panel en cualquier momento. El bot se retira cuando detecta su intervención."
+    a: "El bot le avisa al cliente que le trasladará la pregunta y le envía a usted una notificación. Usted puede intervenir en cualquier momento desde su panel."
   },
   {
     q: "¿Cuánto tiempo tarda la configuración inicial?",
-    a: "La mayoría de negocios quedan activos en menos de dos horas. Tenemos una guía paso a paso y ofrecemos llamadas de incorporación gratuitas en planes Pro."
+    a: "Con nuestro equipo de implementación, su negocio puede estar activo y recibiendo citas en menos de 24 horas."
   }
 ]
 

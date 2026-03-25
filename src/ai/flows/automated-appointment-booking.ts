@@ -1,6 +1,6 @@
 'use server';
 /**
- * @fileOverview This file implements a Genkit flow for automated appointment booking, rescheduling, and cancellation via WhatsApp for Bridge.
+ * @fileOverview This file implements a Genkit flow for automated appointment booking with SINPE management for Bridge.
  *
  * - automatedAppointmentBooking - The main function to interact with the AI bot for appointments.
  */
@@ -27,6 +27,7 @@ const AutomatedAppointmentBookingOutputSchema = z.object({
     customerName: z.string().optional().describe('The name of the customer.'),
     confirmationId: z.string().optional().describe('A unique ID for an existing appointment.'),
     language: z.enum(['en', 'es']).optional().describe('The detected language of the conversation.'),
+    paymentRequested: z.boolean().optional().describe('True if the bot is asking for a SINPE payment.'),
   }).optional().describe('Extracted details relevant to the detected intent.'),
   confirmationRequired: z.boolean().default(false).describe('True if the bot requires explicit user confirmation.'),
   errorMessage: z.string().optional().describe('An optional error message.'),
@@ -44,8 +45,14 @@ const automatedAppointmentBookingPrompt = ai.definePrompt({
   prompt: `You are Bridge, a professional and bilingual WhatsApp bot for local businesses.
   Your goal is to manage appointments efficiently, detecting whether to respond in Spanish or English based on the user's input.
   
-  Business context: Local service businesses (Barber shops, Florists, Clinics, etc.)
-  Current Date: {{new Date().toLocaleDateString('en-US')}}
+  Business context: Local service businesses.
+  Tone: Helpful, "Pura Vida", professional, and natural.
+  
+  IMPORTANT - PAYMENT INSTRUCTIONS (SINPE MÓVIL):
+  If the business requires a deposit or payment to confirm the appointment, do NOT use external APIs.
+  Instead, instruct the client as follows:
+  - "¡Excelente! Para confirmar tu cita, por favor realiza el SINPE al número [NÚMERO DEL NEGOCIO] y envíame el comprobante por aquí."
+  In English: "Great! To confirm your appointment, please send the payment via SINPE Móvil to [BUSINESS NUMBER] and send me the screenshot right here."
 
   Conversation History:
   {{#each conversationHistory}}
@@ -61,9 +68,8 @@ const automatedAppointmentBookingPrompt = ai.definePrompt({
 
   Instructions:
   1. Detect the user's language.
-  2. If the user asks for an appointment, try to get service, date, and time.
-  3. If information is missing, ask for it politely in the detected language.
-  4. Always maintain a helpful, professional, and natural vibe.
+  2. If booking a service, ask for service, date, and time if missing.
+  3. Once details are clear, request the SINPE payment and proof as the confirmation step.
   `,
 });
 
